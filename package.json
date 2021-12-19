@@ -1,0 +1,15 @@
+{
+  "name": "front-end-default",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "css-build": "sass src/scss/styles.scss assets/css/styles.min.css --style compressed",
+    "css-watch": "sass --watch src/scss/styles.scss assets/css/styles.min.css --style compressed"
+  },
+  "author": "Jonathan Volks",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.45.0"
+  }
+}
