@@ -1,0 +1,51 @@
+* { 
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8rem;
+}
+
+a {}
+a:link {}
+a:active {}
+a:hover {}
+a:focus {}
+a:visited {}
+
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+
+i, em { 
+    font-style: italic;
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+small {}
+
+img {
+    max-width: 100%; 
+    height: auto;
+}
+
+ul, ol, li {}
+
+iframe {
+    max-width: 100%;
+}
+
+
+hr {}
