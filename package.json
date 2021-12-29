@@ -4,12 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "css-build": "sass src/scss/styles.scss assets/css/styles.min.css --style compressed",
-    "css-watch": "sass --watch src/scss/styles.scss assets/css/styles.min.css --style compressed"
+    "sass-compile": "sass src/scss/styles.scss assets/css/styles.min.css --style compressed",
+    "js-compile": "ccatjs src/js/scripts.js assets/js/scripts.min.js && uglifyjs assets/js/scripts.min.js --compress --mangle -o assets/js/scripts.min.js",
+    "watch": "npm-watch"
   },
   "author": "Jonathan Volks",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.45.0"
+    "ccatjs": "^4.1.1",
+    "npm-watch": "^0.11.0",
+    "sass": "^1.45.0",
+    "uglify-js": "^3.14.5"
+  },
+  "watch": {
+    "js-compile": {
+      "patterns": ["src", "js"],
+      "extensions": "js,jsx"
+    },
+    "sass-compile": {
+      "patterns":["src", "scss"],
+      "extensions": "scss"  
+    }
   }
 }
